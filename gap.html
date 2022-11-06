@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="gapfav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="gapfav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="gapfav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="gapfav/site.webmanifest" />
+    <title>Our Location</title>
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url(weather.jpg.webp);
+        background-size: cover;
+        background-position: center;
+      }
+      tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+      .paddingT {
+        margin-top: 70px;
+      }
+      button {
+        width: 200px;
+        padding: 15px;
+        text-align: center;
+        margin: 10px 650px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #5605cf;
+        background: transparent;
+        color: rgb(17, 166, 247);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      span {
+        background: #5605cf;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        z-index: -1;
+        transition: 0.9s;
+      }
+      button:hover span {
+        width: 100%;
+      }
+      button:hover {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paddingT">
+      <table align="center" border="4" bordercolor="#0000FF">
+        <tr>
+          <td colspan="2">
+            <h1 align="center" color="#00FFFF">Data Collection Dashboard</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <iframe
+              width="450"
+              height="260"
+              style="border: 1px solid #cccccc"
+              src="https://thingspeak.com/channels/1879670/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+            ></iframe>
+          </td>
+          <td>
+            <iframe
+              width="450"
+              height="260"
+              style="border: 1px solid #cccccc"
+              src="https://thingspeak.com/channels/1879670/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"
+            ></iframe>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1879670/widgets/540210"></iframe>
+
+          </td>
+          <td>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1879670/widgets/540215"></iframe>
+
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="content">
+      <div>
+        <a href="purchase.html">
+          <button type="button"><span></span>Purchase</button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
