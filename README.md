@@ -10,3 +10,7 @@ PAYMENT PAGE
 ![payment page](https://user-images.githubusercontent.com/109501765/200186104-b6c53356-8b6a-43d0-a43b-e81be1fd2087.png)
 
 TEMPERATURE AND HUMIDITY OUTPUT PAGE 
+
+
+![data output](https://user-images.githubusercontent.com/109501765/200186181-1a786e49-ad6f-4651-9a2c-2de43d63cb0c.png)
+
